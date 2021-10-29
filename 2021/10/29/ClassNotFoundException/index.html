@@ -16,9 +16,9 @@
 <meta property="og:description" content="问题：在学习Spring-Boot的时候启动时控制台报错12345Caused by: java.lang.ClassNotFoundException: org.apache.juli.logging.LogFactory	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]	at java.l">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.loli.net/2021/10/29/Cc9qtI41WQ7rnlL.png">
-<meta property="og:image" content="https://zxdcode.github.io.git/2021/10/29/ClassNotFoundException/Users/ZXD/AppData/Roaming/Typora/typora-user-images/image-20211008192255935.png">
+<meta property="og:image" content="https://i.loli.net/2021/10/29/VCjngvo6IFfExGO.png">
 <meta property="article:published_time" content="2021-10-29T09:38:41.733Z">
-<meta property="article:modified_time" content="2021-10-29T14:14:02.350Z">
+<meta property="article:modified_time" content="2021-10-29T15:03:12.673Z">
 <meta property="article:author" content="zxdcode">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/10/29/Cc9qtI41WQ7rnlL.png">
@@ -165,7 +165,7 @@
 <p>3、以为是IDEA部署项目时没导入包，后面检查不是。</p>
 <p>4、最后在一个兄弟的提醒下发现是JDK中没有tomcat-juli.jar包，在tomcat中找到该包复制过去JDK响应的包位置即可。</p>
 <h3 id="解决方法：找到JDK中缺包的地方，并将tomcat-juli-jar包导入即可"><a href="#解决方法：找到JDK中缺包的地方，并将tomcat-juli-jar包导入即可" class="headerlink" title="解决方法：找到JDK中缺包的地方，并将tomcat-juli.jar包导入即可"></a>解决方法：找到JDK中缺包的地方，并将tomcat-juli.jar包导入即可</h3><h1 id="这里发现少了个包"><a href="#这里发现少了个包" class="headerlink" title="这里发现少了个包"></a>这里发现少了个包</h1><p><img src="https://i.loli.net/2021/10/29/Cc9qtI41WQ7rnlL.png" alt="image-20211008192215696"></p>
-<h3 id="将tomcat-juli-jar导入这个位置即可"><a href="#将tomcat-juli-jar导入这个位置即可" class="headerlink" title="将tomcat-juli.jar导入这个位置即可"></a>将tomcat-juli.jar导入这个位置即可</h3><p><img src="/2021/10/29/ClassNotFoundException/Users\ZXD\AppData\Roaming\Typora\typora-user-images\image-20211008192255935.png" alt="image-20211008192255935"></p>
+<h3 id="将tomcat-juli-jar导入这个位置即可"><a href="#将tomcat-juli-jar导入这个位置即可" class="headerlink" title="将tomcat-juli.jar导入这个位置即可"></a>将tomcat-juli.jar导入这个位置即可</h3><p><img src="https://i.loli.net/2021/10/29/VCjngvo6IFfExGO.png" alt="image-20211008192255935"></p>
 <p>问题解决QAQ</p>
 
       

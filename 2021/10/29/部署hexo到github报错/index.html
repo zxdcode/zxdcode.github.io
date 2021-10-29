@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zxdcode.github.io.git">
-  <title>你好 | zxdcode的博客</title>
+  <title>部署hexo到github报错 | zxdcode的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个老男孩">
-<meta property="og:type" content="website">
-<meta property="og:title" content="你好">
-<meta property="og:url" content="https://zxdcode.github.io.git/%E4%BD%A0%E5%A5%BD/index.html">
+  <meta name="description" content="问题：如上图所示，部署更新博客hexo d时报错1fatal: unable to access &amp;#x27;https:&#x2F;&#x2F;github.com&#x2F;zxdcode&#x2F;zxdcode.github.io.git&#x2F;&amp;#x27;: OpenSSL SSL_read: Connection was reset, errno 10054  解决方法： 执行命令  git config --global ht">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部署hexo到github报错">
+<meta property="og:url" content="https://zxdcode.github.io.git/2021/10/29/%E9%83%A8%E7%BD%B2hexo%E5%88%B0github%E6%8A%A5%E9%94%99/index.html">
 <meta property="og:site_name" content="zxdcode的博客">
-<meta property="og:description" content="一个老男孩">
+<meta property="og:description" content="问题：如上图所示，部署更新博客hexo d时报错1fatal: unable to access &amp;#x27;https:&#x2F;&#x2F;github.com&#x2F;zxdcode&#x2F;zxdcode.github.io.git&#x2F;&amp;#x27;: OpenSSL SSL_read: Connection was reset, errno 10054  解决方法： 执行命令  git config --global ht">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-29T10:30:56.000Z">
-<meta property="article:modified_time" content="2021-10-29T10:30:56.394Z">
+<meta property="og:image" content="https://i.loli.net/2021/10/29/zFpYotSRjGQAaIJ.png">
+<meta property="article:published_time" content="2021-10-29T14:59:52.040Z">
+<meta property="article:modified_time" content="2021-10-29T14:59:52.088Z">
 <meta property="article:author" content="zxdcode">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/10/29/zFpYotSRjGQAaIJ.png">
   
     <link rel="alternative" href="/atom.xml" title="zxdcode的博客" type="application/atom+xml">
   
@@ -132,27 +134,39 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-部署hexo到github报错" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      你好
+      部署hexo到github报错
     </h1>
   
 
         
-        <a href="/%E4%BD%A0%E5%A5%BD/index.html" class="archive-article-date">
-  	<time datetime="2021-10-29T10:30:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-29</time>
+        <a href="/2021/10/29/%E9%83%A8%E7%BD%B2hexo%E5%88%B0github%E6%8A%A5%E9%94%99/" class="archive-article-date">
+  	<time datetime="2021-10-29T14:59:52.040Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id><a href="#" class="headerlink" title></a></h3><p><img src="https://i.loli.net/2021/10/29/zFpYotSRjGQAaIJ.png" alt="image-20211029225406180"></p>
+<h3 id="问题：如上图所示，部署更新博客hexo-d时报错"><a href="#问题：如上图所示，部署更新博客hexo-d时报错" class="headerlink" title="问题：如上图所示，部署更新博客hexo d时报错"></a>问题：如上图所示，部署更新博客hexo d时报错</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/zxdcode/zxdcode.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br></pre></td></tr></table></figure>
+
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><ul>
+<li><p>执行命令</p>
+</li>
+<li><pre><code class="java">git config --global http.sslVerify &quot;false&quot;
+</code></pre>
+</li>
+</ul>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhanqing/p/15133067.html">https://www.cnblogs.com/zhanqing/p/15133067.html</a></p>
+<p>反思：这种情况经常出现，可能是github的问题，我们总是访问不上，建议多试几次。</p>
+
       
 
       
@@ -231,7 +245,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zxdcode.github.io.git/%E4%BD%A0%E5%A5%BD/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zxdcode.github.io.git/2021/10/29/%E9%83%A8%E7%BD%B2hexo%E5%88%B0github%E6%8A%A5%E9%94%99/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -243,6 +257,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2021/10/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -293,7 +317,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
